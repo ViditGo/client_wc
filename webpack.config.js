@@ -11,7 +11,9 @@ module.exports = {
     publicPath: '/',
   },
   plugins: [
-    new HTMLPlugin(),
+    new HTMLPlugin({
+      title: 'World Cup App'
+    }),
     new ExtractPlugin('bundle-[hash].css'),
   ],
   module: {
@@ -25,6 +27,14 @@ module.exports = {
         test: /\.scss$/,
         loader: ExtractPlugin.extract(['css-loader', 'sass-loader']),
       },
+      {
+        test: /\.css$/,
+        loader: 'css-loader',
+      },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file-loader'
+            }
     ],
   },
 }

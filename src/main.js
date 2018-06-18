@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import App from './components/app';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const container = document.createElement('div');
 document.body.appendChild(container);
@@ -15,8 +15,6 @@ ReactDom.render(<App />, container);
 // import { Provider } from 'react-redux';
 // import { createStore, applyMiddleware } from 'redux';
 // import { BrowserRouter, Route, Switch } from 'react-router-dom';
-// import PostsIndex from './components/posts_index';
-// import PostsNew from './components/posts_new';
 // import reducers from './reducers';
 // import ReduxPromise from 'redux-promise';
 
